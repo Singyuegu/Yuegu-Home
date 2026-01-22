@@ -8,6 +8,8 @@
     /* 極深藍色背景 */
     --bg-card: #1e293b;
     /* 稍淺的卡片背景 */
+    --bg-card-light: #34AFCE;
+    /* 明亮的卡片背景 */
     --bg-nav: rgba(15, 23, 42, 0.9);
     --text-main: #f8fafc;
     /* 近乎白色的主文字 */
@@ -87,20 +89,20 @@ nav {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--bg-card);
+    border: 4px solid var(--bg-card-light);
     /* 增加照片邊框感 */
 }
 
 .badge {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     right: 0;
     background: var(--primary);
     color: white;
     padding: 6px 14px;
     border-radius: 12px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .hero-text h1 {
