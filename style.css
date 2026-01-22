@@ -207,22 +207,6 @@ nav {
     margin-top: 80px;
 }
 
-.btn-primary {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 14px 30px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 20px;
-    transition: opacity 0.3s;
-}
-
-.btn-primary:hover {
-    opacity: 0.9;
-}
-
 .footer-bottom {
     text-align: center;
     margin-top: 60px;
