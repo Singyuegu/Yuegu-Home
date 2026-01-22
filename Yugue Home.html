@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuegu Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">P</span> Profile
+        </div>
+        <select class="lang-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+        </select>
+    </nav>
+
+    <div class="container">
+        <div id="en-content" class="content-section active">
+            <header class="hero">
+                <div class="profile-container">
+                    <img src="Azizi Yuegu.png" alt="Yuegu" class="profile-img">
+                    <span class="badge">Open to Work ✨</span>
+                </div>
+                <div class="hero-text">
+                    <h1>Yuegu</h1>
+                    <div class="title">Senior Full Stack Engineer</div>
+                    <p class="bio">Passionate about building scalable web applications and intuitive user experiences.
+                        With over 8 years of experience in modern JavaScript frameworks, I focus on performance,
+                        accessibility, and robust architecture.</p>
+                </div>
+            </header>
+
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="card">React & TypeScript</div>
+                <div class="card">Node.js</div>
+                <div class="card">Cloud Architecture</div>
+                <div class="card">UI/UX Design</div>
+            </div>
+
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">2020 - Present</span>
+                    <h3>Lead Frontend Architect</h3>
+                    <p class="company">Nexus Tech Solutions</p>
+                    <p>Driving the frontend strategy for a multi-million dollar SaaS platform. Optimized load times by
+                        40% and mentored a team of 12 developers.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2017 - 2020</span>
+                    <h3>Full Stack Developer</h3>
+                    <p class="company">Innovate AI</p>
+                    <p>Developed and deployed various machine learning visualization tools. Implemented real-time data
+                        streaming architectures using WebSockets.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2015 - 2017</span>
+                    <h3>Web Development Intern</h3>
+                    <p class="company">Starry Startups</p>
+                    <p>Assisted in the development of responsive landing pages and internal admin dashboards using
+                        HTML5, CSS3, and early React.</p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h2>Let's build something together</h2>
+                <p>Currently exploring new opportunities and interesting projects. Feel free to reach out for
+                    collaborations!</p>
+                <a href="https://www.facebook.com/Singyuegu/" class="btn-primary">Get in Touch</a>
+            </div>
+        </div>
+
+        <div id="zh-content" class="content-section">
+            <header class="hero">
+                <div class="profile-container">
+                    <img src="Azizi Yuegu.png" alt="艾力克斯" class="profile-img">
+                    <span class="badge">歡迎洽談 ✨</span>
+                </div>
+                <div class="hero-text">
+                    <h1>耀穀</h1>
+                    <div class="title">資深全端工程師</div>
+                    <p class="bio">熱衷於構建可擴展的網頁應用程序和直觀的用戶體驗。擁有超過 8 年的現代 JavaScript 框架經驗，我專注於性能、無障礙和穩健的架構設計。</p>
+                </div>
+            </header>
+
+            <h2 class="section-title">核心專業知識</h2>
+            <div class="expertise-grid">
+                <div class="card">React & TypeScript</div>
+                <div class="card">Node.js</div>
+                <div class="card">雲端架構設計</div>
+                <div class="card">UI/UX 設計</div>
+            </div>
+
+            <h2 class="section-title">職涯發展</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">2020 - 至今</span>
+                    <h3>首席前端架構師</h3>
+                    <p class="company">Nexus 科技解決方案</p>
+                    <p>負責領導數百萬美元 SaaS 平台的前端策略。將加載時間優化了 40%，並帶領 12 名開發人員的團隊。</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2017 - 2020</span>
+                    <h3>全端開發人員</h3>
+                    <p class="company">Innovate AI</p>
+                    <p>開發並部署了各種機器學習可視化工具。使用 WebSockets 實現了實時數據流架構。</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2015 - 2017</span>
+                    <h3>網頁開發實習生</h3>
+                    <p class="company">Starry Startups</p>
+                    <p>協助使用 HTML5、CSS3 和早期 React 開發響應式落地頁面和內部管理後台。</p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h2>讓我們一起創造精彩作品</h2>
+                <p>目前正在尋找新的機會和有趣的項目。歡迎隨時聯繫洽談合作！</p>
+                <a href="https://www.facebook.com/Singyuegu/" class="btn-primary">與我聯繫</a>
+            </div>
+        </div>
+
+        <footer class="footer-bottom">
+            <p>© 2026 Alex Sterling. Built with Gemini AI.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
