@@ -10,189 +10,65 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+    <script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
     <nav>
-        <div class="logo">
-            <span class="logo-icon">P</span> Profile
-        </div>
+        <div class="logo"><span class="logo-icon">P</span> Profile</div>
         <select class="lang-select" onchange="changeLanguage(this.value)">
             <option value="en">English</option>
             <option value="zh">繁體中文</option>
         </select>
     </nav>
 
-    <div class="container">
-        <div id="en-content" class="content-section active">
-            <header class="hero">
-                <div class="profile-container">
-                    <img src="./img/Azizi_Yuegu.png" alt="Yuegu" class="profile-img">
-                    <span class="badge">Open to Work ✨</span>
-                </div>
-                <div class="hero-text">
-                    <h1>Yuegu</h1>
-                    <div class="title">Photographer</div>
-                    <p class="bio">I can do photography(Maybe)</p>
-                </div>
-            </header>
-
-            <h2 class="section-title">Skill</h2>
-            <div class="expertise-grid">
-                <div class="card">Photograph</div>
-                <div class="card">Fitness</div>
-                <div class="card">ABAP</div>
-                <div class="card">Web development</div>
+    <div class="container" id="main-content">
+        <header class="hero">
+            <div class="profile-container">
+                <img src="./img/Azizi_Yuegu.png" alt="Yuegu" class="profile-img">
+                <span class="badge" id="i18n-badge"></span>
             </div>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720330331898"
-                title="20251114-Infurnity2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54923632744_36e01a24ab_w.jpg"
-                    alt="20251114-Infurnity2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720327729801"
-                title="20250724-UTFG2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54674261534_cca9e8e1c7.jpg"
-                    alt="20250724-UTFG2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720326185616"
-                title="20250517-怪獸老爹2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54527093083_a0625e9ba3_w.jpg"
-                    alt="20250517-怪獸老爹2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="date">2025</span>
-                    <h3>Photographer</h3>
-                    <p class="company">COSCUP documentary</p>
-                    <p>In charge of photography for the main agenda, various sessions, and booths.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date">2023 - Now</span>
-                    <h3>ABAPer</h3>
-                    <p class="company">Deloitte</p>
-                    <p>SAP (ERP) coding.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date">???? - Now</span>
-                    <h3>Web Web development</h3>
-                    <p class="company"></p>
-                    <p>This web is my portfolio.</p>
-                </div>
+            <div class="hero-text">
+                <h1 id="i18n-name"></h1>
+                <div class="title" id="i18n-title"></div>
+                <p class="bio" id="i18n-bio"></p>
             </div>
+        </header>
 
-            <div class="cta-box">
-                <h2>Let's build something together</h2>
-                <p>Currently exploring new opportunities and interesting projects. Feel free to reach out for
-                    collaborations!</p>
-                <a href="https://www.facebook.com/Singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/facebook.png" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com/singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/instagram.png" alt="instagram">
-                </a>
-                <a href="https://www.flickr.com/photos/singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/flickr.png" alt="flickr">
-                </a>
-                <a href="https://github.com/Singyuegu" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/github.png" alt="github">
-                </a>
-                <a href="https://www.twitch.tv/singyuegu" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/twitch.png" alt="twitch">
-                </a>
-            </div>
+        <h2 class="section-title" id="i18n-skillsTitle"></h2>
+        <div class="expertise-grid" id="i18n-skillsGrid"></div>
+        <div class="gallery-container">
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720330331898"><img
+                    class="flickr-photo" src="https://live.staticflickr.com/65535/54923632744_36e01a24ab_w.jpg"></a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720327729801"><img
+                    class="flickr-photo" src="https://live.staticflickr.com/65535/54674261534_cca9e8e1c7.jpg"></a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720326185616"><img
+                    class="flickr-photo" src="https://live.staticflickr.com/65535/54527093083_a0625e9ba3_w.jpg"></a>
         </div>
 
-        <div id="zh-content" class="content-section">
-            <header class="hero">
-                <div class="profile-container">
-                    <img src="./img/Azizi_Yuegu.png" alt="艾力克斯" class="profile-img">
-                    <span class="badge">歡迎洽談 ✨</span>
-                </div>
-                <div class="hero-text">
-                    <h1>耀穀</h1>
-                    <div class="title">攝影師</div>
-                    <p class="bio">我會拍照(應該吧)</p>
-                </div>
-            </header>
+        <h2 class="section-title" id="i18n-expTitle"></h2>
+        <div class="timeline" id="i18n-timeline"></div>
 
-            <h2 class="section-title">技能</h2>
-            <div class="expertise-grid">
-                <div class="card">攝影</div>
-                <div class="card">健身</div>
-                <div class="card">ABAP</div>
-                <div class="card">網頁開發</div>
-            </div>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720330331898"
-                title="20251114-Infurnity2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54923632744_36e01a24ab_w.jpg"
-                    alt="20251114-Infurnity2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720327729801"
-                title="20250724-UTFG2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54674261534_cca9e8e1c7.jpg"
-                    alt="20250724-UTFG2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/singyuegu/albums/72177720326185616"
-                title="20250517-怪獸老爹2025">
-                <img class="flickr-photo" src="https://live.staticflickr.com/65535/54527093083_a0625e9ba3_w.jpg"
-                    alt="20250517-怪獸老爹2025" /></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-            <h2 class="section-title">經歷</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="date">2025</span>
-                    <h3>攝影師</h3>
-                    <p class="company">COSCUP 紀錄組</p>
-                    <p>負責記錄主議程、眾多議程、攤位等攝影需求。</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date">2023 - Now</span>
-                    <h3>ABAPer</h3>
-                    <p class="company">Deloitte</p>
-                    <p>SAP (ERP) 程式開發。</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date">???? - Now</span>
-                    <h3>網頁開發</h3>
-                    <p class="company"></p>
-                    <p>這個網頁是我的作品。</p>
-                </div>
-            </div>
-
-            <div class="cta-box">
-                <h2>讓我們一起創造精彩作品</h2>
-                <p>目前正在尋找新的機會和有趣的項目。歡迎隨時聯繫洽談合作！</p>
-                <a href="https://www.facebook.com/Singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/facebook.png" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com/singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/instagram.png" alt="instagram">
-                </a>
-                <a href="https://www.flickr.com/photos/singyuegu/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/flickr.png" alt="flickr">
-                </a>
-                <a href="https://github.com/Singyuegu" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/github.png" alt="github">
-                </a>
-                <a href="https://www.twitch.tv/singyuegu" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/twitch.png" alt="twitch">
-                </a>
+        <div class="cta-box">
+            <h2 id="i18n-ctaTitle"></h2>
+            <p id="i18n-ctaDesc"></p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Singyuegu/" target="_blank"><img src="./img/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/singyuegu/" target="_blank"><img src="./img/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://www.flickr.com/photos/singyuegu/" target="_blank"><img src="./img/flickr.png"
+                        alt="flickr"></a>
+                <a href="https://github.com/Singyuegu" target="_blank"><img src="./img/github.png" alt="github"></a>
+                <a href="https://www.twitch.tv/singyuegu" target="_blank"><img src="./img/twitch.png" alt="twitch"></a>
             </div>
         </div>
-
-        <footer class="footer-bottom">
-            <p>© 2026 Yuegu</p>
-        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <footer class="footer-bottom">
+        <p>© 2026 Yuegu</p>
+    </footer>
+    </div>
 </body>
 
 </html>
