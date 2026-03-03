@@ -2,6 +2,6 @@ https://youtu.be/FKXRiAiQFiY?si=J0xLHUnQ5GM_U2dQ
 
 把所有東西都放進快照,在終端機輸入 git add . 
 再用git commit -m "XXXXXX" 把資料建立快照
-可以用git log 查看紀錄
+可以用git log 查看紀錄,也可以查看歷史git log --oneline
 
 最後用git push 把資料推上github
