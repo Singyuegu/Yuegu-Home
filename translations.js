@@ -2,7 +2,7 @@ const i18n = {
     en: {
         name: "Yuegu",
         title: "Photographer",
-        bio: "I can do photography (Maybe)",
+        bio: "I can do photography",
         badge: "Open to Work ✨",
         skillsTitle: "Skill",
         skills: ["Photograph", "Fitness", "ABAP", "Web development"],
@@ -18,7 +18,7 @@ const i18n = {
     zh: {
         name: "耀穀",
         title: "攝影師",
-        bio: "我會拍照 (應該吧)",
+        bio: "我會拍照",
         badge: "歡迎洽談 ✨",
         skillsTitle: "技能",
         skills: ["攝影", "健身", "ABAP", "網頁開發"],
